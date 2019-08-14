@@ -86,6 +86,7 @@ public class StreamLambdaHandler implements RequestStreamHandler {
         String cred = "Ad_2019:"+value1;
         projectkey = StringUtils.isBlank(projectkey) ? "SEC" : projectkey;
         summary = StringUtils.isBlank(summary) ? "Test Summary" : summary;
+        issueType = StringUtils.isBlank(issueType) ? "Bug" : issueType;
         description = StringUtils.isBlank(description) ? "Test Description" : description;
 
         StringBuilder serverResponse = new StringBuilder();
